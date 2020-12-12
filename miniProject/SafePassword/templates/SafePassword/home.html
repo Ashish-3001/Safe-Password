@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'SafePassword/home.css/' %}">
+    <title>Save Password</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">SAFE PASSWORD</h1>
+      <h2 id="title1"> Safely save it and forget about it. </h2>
+    </header>
+    <main>
+        <div class="left">
+            <div class="centered">
+                <article class="left-b">
+                    <a href="/add/">
+                        <h2>Add New Password</h2>
+                    </a>
+                </article>
+            </div>
+          </div>
+          <div class="right">
+            <div class="centered">
+                <article class="right-b">
+                    <a href="/retrive/">
+                        <h2 class="Retrive" > Retrive Existing passwords </h2>
+                    </a>
+                </article>
+            </div>
+          </div>
+    </main>
+    <footer class="footer">
+        <section>
+            <h2>About the idea</h2>
+            <p>
+                Store your username and password of any applications without worrying about the safety.
+                Once it is stored here you are free from the headache of remembering soo many usernames and passwords. 
+                Or having to use forgot password every time we forget something.
+             </p>
+        </section>
+        <samp>Done By : Ashish.</samp><br>
+        <samp>help line : 7892288771</samp><br>
+    </footer>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <script src= "{% static 'SafePassword/main.js/' %}"></script>
+</html>

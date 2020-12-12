@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'SafePassword/retrive.css/' %}">
+    <title>Save Password</title>
+</head>
+<body>
+    <header>
+      <h1 id="title">SAFE PASSWORD</h1>
+      <h2 id="title1"> Safely save it and forget about it. </h2>
+    </header>
+    <main>
+        <h2 class="all" >All applications</h2>
+        {% for count in all_application %}
+            <a href="/retrive/{{count.id}}/">
+                <article class="donations">
+                    <h2 class="count"> {{ count.name }} </h2>
+                </article>
+            </a>
+        {% endfor %}
+    </main>
+    <footer class="footer">
+        <section>
+            <h2>About the idea</h2>
+            <p>
+                Store your username and password of any applications without worrying about the safety.
+                Once it is stored her your free from the headache of remembering so many usernames and passwords. 
+                Or having to use forgot password every time we forget something 
+                </p>
+        </section>
+        <samp>Done By : Ashish.</samp><br>
+        <samp>help line : 7892288771</samp><br>
+    </footer>
+</body>
+</html>

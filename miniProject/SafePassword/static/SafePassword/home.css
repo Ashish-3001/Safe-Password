@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+body {
+    margin: 0px;
+    
+}
+
+#title {
+    font-family: 'Anton' , sans-serif !important ;
+    font-size: 45px !important;
+    color: #000;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+#title1 {
+    margin-top: 0px;
+    margin-left: 20px;
+
+}
+
+
+header {
+    text-align: center;
+    border-bottom: 4px solid black;
+    margin-top: 0px;
+    background: lightblue;
+    width: 100%;
+}
+
+
+.left-b {
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+    background: white;
+    box-shadow: 2px 2px 10px white;
+    transition: box-shadow 500ms, background 3s;
+
+}
+
+.right-b {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background: black;
+    box-shadow: 2px 2px 10px black;
+    transition: box-shadow 300ms, background 2s;
+
+}
+
+.Retrive {
+    color: white;
+    text-decoration: none;
+}
+
+.left-b:hover , .right-b:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .7);
+    background: lightblue;
+}
+
+  
+.left {
+    height: 500px;
+    position: absolute;
+    width: 50%;
+    background-color: #111;
+}
+
+.right {
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    background-color: white;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+
+.footer {
+    margin-top: 500px;
+    text-align: center;
+    border-top: 4px solid black;
+    background: lightblue;
+    width: 100%;
+}
